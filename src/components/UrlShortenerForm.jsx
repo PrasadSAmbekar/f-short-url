@@ -9,8 +9,11 @@ const UrlShortenerForm = () => {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
+  console.log("here1");
+  console.log("here", import.meta.env.VITE_BACKEND_URL);
   try {
     const response = await axios.post(
+      
       `${import.meta.env.VITE_BACKEND_URL}/shorten`,
       { originalUrl }
     );
