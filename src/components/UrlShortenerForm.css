@@ -1,0 +1,106 @@
+/* UrlShortenerForm.css */
+body {
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: url('https://wallpaperaccess.com/full/1567679.jpg');
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: grey;
+  }
+  
+  
+  .url-shortener-container {
+    text-align: center;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 15px;
+  }
+  
+  .form-wrapper {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .url-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .url-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(227, 33, 33, 0.1);
+  }
+  
+  .url-input:focus {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .shorten-btn {
+    background: #4c82e1;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .shorten-btn:hover {
+    background: #6a11cb;
+    transform: scale(1.1);
+  }
+  
+  .result {
+    margin-top: 20px;
+    animation: slideDown 1s ease;
+  }
+  
+  .result a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
